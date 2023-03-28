@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mujoco_map_maker"
+version = "0.1.0"
+
+authors = [
+  { name="Vistor"},
+]
+
+description = "A package to make maps from code for MuJoCo"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.stl"]
+
+[project.urls]
+"Homepage" = "https://github.com/vistormu/mujoco_map_maker"
+"Bug Tracker" = "https://github.com/vistormu/mujoco_map_maker/issues"

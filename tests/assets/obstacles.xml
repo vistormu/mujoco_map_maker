@@ -1,0 +1,36 @@
+<mujoco model="obstacles">
+    <worldbody>
+        <body name="cube_1" pos="0.5 0.0 0.25">
+            <geom type="box" size="0.25 0.25 0.25" rgba="0.1843 0.1843 0.1843 1.0"/>
+            <inertial mass="1.0" pos="0.0 0.0 0.0"/>
+        </body>
+        <body name="cube_2" pos="1.0 0.0 0.25">
+            <geom type="box" size="0.25 0.25 0.25" rgba="0.7137 0.2706 0.2706 0.5"/>
+            <inertial mass="1.0" pos="0.0 0.0 0.0"/>
+        </body>
+        <body name="cube_3" pos="1.0 0.0 0.75">
+            <geom type="box" size="0.25 0.25 0.25" rgba="0.7686 0.7686 0.4627 1.0"/>
+        </body>
+        <body name="cube_4" pos="0.5 0.0 0.75">
+            <geom type="box" size="0.25 0.25 0.25" rgba="0.7686 0.7686 0.7686 1.0"/>
+        </body>
+        <body name="box" pos="1.0 0.0 1.25">
+            <geom type="box" size="0.1 0.1 0.25" rgba="0.2 0.2 0.2 0.2"/>
+        </body>
+        <body name="capsule" pos="0.5 -0.5 0.25">
+            <geom type="capsule" size="0.2 0.04999999999999999" rgba="0.7686 0.7686 0.7686 1.0"/>
+        </body>
+        <body name="cylinder" pos="1.0 -0.5 0.25">
+            <geom type="cylinder" size="0.2 0.25" rgba="0.7686 0.7686 0.7686 1.0"/>
+        </body>
+        <body name="sphere" pos="0.5 -1.0 0.25">
+            <geom type="sphere" size="0.25" rgba="0.7686 0.7686 0.7686 1.0"/>
+        </body>
+        <body name="desk" pos="0.0 0.0 0.0">
+            <asset>
+name="desk" file="mujoco_mm/assets/desk.stl"
+            </asset>
+            <geom type="mesh" size="0.0" rgba="0.7686 0.7686 0.7686 1.0"/>
+        </body>
+    </worldbody>
+</mujoco>

@@ -1,0 +1,3 @@
+- Basic .stl objects
+- Relative center
+- Mode free
