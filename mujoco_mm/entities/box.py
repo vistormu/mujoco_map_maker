@@ -16,7 +16,7 @@ class Box(Body):
         self.name = name
         self.type = 'box'
 
-    def set_geometry(self, size: tuple[float, float, float], position: tuple[float, float, float] | None = None, orientation: tuple[float, float, float, float] | None = None, center_location: str | None = None):
+    def set_geometry(self, size: tuple[float, float, float], position: tuple[float, float, float] | None = None, orientation: tuple[float, float, float, float] | tuple[float, float, float] | None = None, center_location: str | None = None):
         if type(size) is not tuple and len(size) != 3:
             raise TypeError(f'the size of a {__class__.__name__} instance must be a tuple[float, float, float]. Received {type(size)}')
 

@@ -16,7 +16,7 @@ class Cylinder(Body):
         self.name = name
         self.type = 'cylinder'
 
-    def set_geometry(self, size: tuple[float, float], position: tuple[float, float, float] | None = None, orientation: tuple[float, float, float, float] | None = None, center_location: str | None = None):
+    def set_geometry(self, size: tuple[float, float], position: tuple[float, float, float] | None = None, orientation: tuple[float, float, float, float] | tuple[float, float, float] | None = None, center_location: str | None = None):
         if type(size) is not tuple and len(size) != 2:
             raise TypeError(f'the size of a {__class__.__name__} instance must be a tuple[float, float]. Received {type(size)}')
 

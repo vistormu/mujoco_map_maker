@@ -19,3 +19,7 @@ class Mesh(Body):
         self.name = name
         self.type = 'mesh'
         self.mesh_file = mesh_file
+
+    def set_geometry(self, position: tuple[float, float, float] | None = None, orientation: tuple[float, float, float, float] | tuple[float, float, float] | None = None, center_location: str | None = None):
+        size: int = 0
+        return super().set_geometry(size, position, orientation, center_location)

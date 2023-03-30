@@ -57,7 +57,7 @@ class Body:
 
     # Geom
     position: tuple[float, float, float] = (0.0, 0.0, 0.0)
-    orientation: tuple[float, float, float, float] = (1.0, 0.0, 0.0, 0.0)
+    orientation: tuple[float, float, float, float] | tuple[float, float, float] = (1.0, 0.0, 0.0, 0.0)
     size: float | tuple[float, float] | tuple[float, float, float] = 0.0
     center_location: str = 'base_center'
 
@@ -72,7 +72,7 @@ class Body:
     def set_geometry(self,
                      size: float | tuple[float, float] | tuple[float, float, float],
                      position: tuple[float, float, float] | None = None,
-                     orientation: tuple[float, float, float, float] | None = None,
+                     orientation: tuple[float, float, float, float] | tuple[float, float, float] | None = None,
                      center_location: str | None = None,
                      ):
         '''
@@ -86,8 +86,8 @@ class Body:
         position : tuple[float, float, float], optional
             the position of the body relative to the origin. (0.0, 0.0, 0.0) by default
 
-        orientation : tuple[float, float, float, float], optional
-            the orientation of the body in quaternions. (1.0, 0.0, 0.0, 0.0) by default
+        orientation : tuple[float, float, float, float] | tuple[float, float, float], optional
+            the orientation of the body in quaternions or Euler angles. (1.0, 0.0, 0.0, 0.0) by default
 
         center_location: str, optional
             a WIP attribute

@@ -1,13 +1,21 @@
 <mujoco model="adam scene">
 
-    <include file="adam.xml"/>
 
+    <compiler angle="radian" inertiafromgeom="true" />
+    <option timestep="0.017" iterations="100" tolerance="1e-10" impratio="20" cone="elliptic" density="1.2" viscosity="0.00002"/>
+    <size nconmax="5000" njmax="5000"/>
     <statistic center="0.3 0 0.4" extent="0.8"/>
+    <!-- <size njmax="10000" nconmax="1500" nstack="3000000"/> -->
+    <!-- <compiler angle="radian" inertiagrouprange="0 0"/> -->
+    <!-- <option impratio="20" cone="elliptic" density="1.2" viscosity="0.00002"/> -->
 
     <visual>
         <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
         <rgba haze="0.15 0.25 0.35 1"/>
         <global azimuth="0.0" elevation="-45.0"/>
+        <map fogstart="3" fogend="5" znear="0.05"/>
+        <quality shadowsize="2048"/>
+        <scale framelength="0.1" framewidth="0.005" contactwidth="0.1" contactheight="0.005" forcewidth="0.01" />
     </visual>
 
     <asset>
@@ -21,7 +29,8 @@
         <geom name="floor" size="0 0 0.05" type="plane" material="groundplane"/>
     </worldbody>
 
+    <!-- <include file="obstacles.xml"/> -->
+    <include file="../../mujoco_mm/assets/objects/bottle.xml"/>
 
-	<include file="obstacles.xml"/>
 </mujoco>
   

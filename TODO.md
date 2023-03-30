@@ -1,3 +1,7 @@
 - Basic .stl objects
 - Relative center
 - Mode free
+- Fix repeating objects with same mesh
+- Add collisions to the mesh object
+- Add textures and materials to the objects
+- Add mesh dir and texture dir
