@@ -1,11 +1,8 @@
 <mujoco model="obstacles">
 <asset>
-<mesh name="desk" file="/home/vistor/projects/mujoco_map_maker/mujoco_mm/assets/desk.stl"/>
+
 </asset>
 <worldbody>
-<body name="desk" pos="1.0 0.0 0.0" quat="0.7071067811865476 0.0 0.0 -0.7071067811865475">
-<geom type="mesh" mesh="desk" rgba="0.6235 0.5059 0.4392 1.0"/>
-</body>
 <body name="box" pos="1.0 0.0 1.05" quat="1.0 0.0 0.0 0.0">
 <geom type="box" rgba="0.7686 0.7686 0.7686 1.0" size="0.15 0.15 0.05"/>
 <freejoint name="box_freejoint"/>

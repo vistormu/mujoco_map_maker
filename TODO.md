@@ -5,3 +5,4 @@
 - Add collisions to the mesh object
 - Add textures and materials to the objects
 - Add mesh dir and texture dir
+- Assets are created by default
